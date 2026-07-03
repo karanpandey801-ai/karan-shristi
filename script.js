@@ -14,6 +14,6 @@ function moveButton() {
 }
 
 yesBtn.addEventListener("click", () => {
-  
-    window.location.href = "archive.html";
-});
+window.location.href = "archive.html";
+});  
+    
