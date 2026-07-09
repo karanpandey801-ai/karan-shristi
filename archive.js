@@ -20,18 +20,19 @@ function togglePoem(button){
 // Playlist
 // =======================
 
-function playSong(videoId, title, artist){
+function playSong(card, videoId, title, artist){
 
     document.getElementById("ytplayer").src =
     "https://www.youtube.com/embed/" + videoId + "?autoplay=1";
 
     document.getElementById("songTitle").innerText = title;
     document.getElementById("artistName").innerText = artist;
-document.querySelectorAll(".song").forEach(song=>{
-    song.classList.remove("active");
-});
 
-event.currentTarget.classList.add("active");
+    document.querySelectorAll(".song").forEach(song=>{
+        song.classList.remove("active");
+    });
+
+    card.classList.add("active");
 }
 
 // =======================
