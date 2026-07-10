@@ -775,3 +775,147 @@ body{
     margin:0 auto;
     margin-bottom:8px;
 }
+/* =========================
+      DIARY PAGE
+========================= */
+
+.diary-page{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+}
+
+.paper{
+
+    width:100%;
+    max-width:460px;
+
+    background:#f8f3ec;
+
+    border-radius:18px;
+
+    padding:60px 40px;
+
+    position:relative;
+
+    box-shadow:
+    0 20px 60px rgba(0,0,0,.12);
+
+}
+
+/* Left diary binding */
+
+.paper::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:-18px;
+    top:0;
+
+    width:18px;
+    height:100%;
+
+    border-radius:18px 0 0 18px;
+
+    background:#d8c9b7;
+
+}
+
+.paper::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:-9px;
+    top:30px;
+
+    width:8px;
+    height:8px;
+
+    background:#9d8f80;
+
+    border-radius:50%;
+
+    box-shadow:
+    0 60px #9d8f80,
+    0 120px #9d8f80,
+    0 180px #9d8f80,
+    0 240px #9d8f80,
+    0 300px #9d8f80;
+
+}
+
+.diary-name{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:54px;
+
+    color:#3b352f;
+
+    text-align:center;
+
+}
+
+.divider{
+
+    width:90px;
+    height:2px;
+
+    background:#ccb59b;
+
+    margin:22px auto 35px;
+
+}
+
+.diary-text{
+
+    font-size:19px;
+
+    color:#5c534b;
+
+    line-height:2;
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+}
+
+.flower{
+
+    text-align:center;
+
+    font-size:40px;
+
+    color:#d2a57d;
+
+    margin:20px 0 35px;
+
+}
+
+.paper button{
+
+    width:100%;
+
+    padding:18px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:#ff5f9b;
+
+    color:#fff;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+}
