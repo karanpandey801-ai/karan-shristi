@@ -244,3 +244,43 @@ height:220px;
 }
 
 }
+/* =========================
+   PREMIUM MATTE THEME
+========================= */
+
+body{
+    background:
+    radial-gradient(circle at top left,#ffeef5 0%,transparent 35%),
+    radial-gradient(circle at bottom right,#ffdbe9 0%,transparent 40%),
+    linear-gradient(135deg,#fff9fb,#fdeef5,#fff7fa);
+    color:#2f2f2f;
+    font-family:'Poppins',sans-serif;
+}
+
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    opacity:.08;
+    background-image:
+    radial-gradient(#ffffff 1px,transparent 1px);
+    background-size:14px 14px;
+}
+
+.hero{
+    background:transparent;
+    padding:100px 20px 70px;
+}
+
+.archive-title{
+    font-family:'Cormorant Garamond',serif;
+    font-size:60px;
+    color:#3b3b3b;
+}
+
+.archive-subtitle{
+    color:#7d7d7d;
+    font-size:18px;
+    margin-top:14px;
+}
