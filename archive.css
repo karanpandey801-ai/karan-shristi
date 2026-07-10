@@ -284,3 +284,62 @@ body::before{
     font-size:18px;
     margin-top:14px;
 }
+/* ===== Premium Archive Cards ===== */
+
+.card,
+.playlist-card,
+.now-playing{
+    background:rgba(255,255,255,.55);
+    backdrop-filter:blur(24px);
+    -webkit-backdrop-filter:blur(24px);
+
+    border:1px solid rgba(255,255,255,.65);
+
+    box-shadow:
+    0 20px 45px rgba(0,0,0,.08),
+    0 8px 20px rgba(255,170,200,.15);
+
+    border-radius:30px;
+}
+
+.section h2,
+.playlist-section h2{
+    font-family:'Cormorant Garamond',serif;
+    font-size:44px;
+    color:#333;
+}
+
+.card h3{
+    font-family:'Cormorant Garamond',serif;
+    font-size:30px;
+    color:#444;
+}
+
+.poem p{
+    color:#555;
+}
+
+.song{
+    background:rgba(255,255,255,.50);
+    border:1px solid rgba(255,255,255,.55);
+}
+
+.song-info h4{
+    color:#333;
+}
+
+.song-info p{
+    color:#777;
+}
+
+.now-playing h3{
+    color:#333;
+}
+
+.now-playing p{
+    color:#777;
+}
+
+footer{
+    color:#777;
+}
