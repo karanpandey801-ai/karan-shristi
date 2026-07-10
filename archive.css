@@ -383,3 +383,22 @@ to{
 }
 
 }
+/* ===== Active Song ===== */
+
+.song.active{
+
+background:linear-gradient(135deg,#ff95bc,#ff5d9b);
+
+border-color:transparent;
+
+box-shadow:
+0 10px 30px rgba(255,100,160,.28);
+
+}
+
+.song.active h4,
+.song.active p{
+
+color:#fff;
+
+}
