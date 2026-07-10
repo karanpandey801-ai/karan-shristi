@@ -402,3 +402,88 @@ box-shadow:
 color:#fff;
 
 }
+/* ===== Luxury Glass Shine ===== */
+
+.card,
+.playlist-card,
+.now-playing{
+
+position:relative;
+overflow:hidden;
+
+}
+
+.card::before,
+.playlist-card::before,
+.now-playing::before{
+
+content:"";
+
+position:absolute;
+
+top:-120%;
+left:-45%;
+
+width:60%;
+height:260%;
+
+background:linear-gradient(
+90deg,
+transparent,
+rgba(255,255,255,.35),
+transparent
+);
+
+transform:rotate(25deg);
+
+animation:shine 9s linear infinite;
+
+pointer-events:none;
+
+}
+
+@keyframes shine{
+
+0%{
+left:-60%;
+}
+
+100%{
+left:170%;
+}
+
+}
+/* ===== Premium Hover ===== */
+
+.card:hover,
+.playlist-card:hover,
+.now-playing:hover{
+
+transform:translateY(-6px);
+
+transition:.4s ease;
+
+box-shadow:
+
+0 28px 60px rgba(255,150,190,.20);
+
+}
+/* ===== Floating Hearts ===== */
+
+.hearts::before{
+
+animation:heartFloat 4s ease-in-out infinite;
+
+}
+
+@keyframes heartFloat{
+
+0%,100%{
+transform:translateX(-50%) translateY(0);
+}
+
+50%{
+transform:translateX(-50%) translateY(-10px);
+}
+
+}
